@@ -49,3 +49,5 @@ msgForm.addEventListener("submit", (e) => {
   socket.emit("send", message);
   msgInput.value = "";
 });
+
+document.getElementById("name").innerText = name;
