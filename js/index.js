@@ -5,19 +5,27 @@ const msgInput = document.getElementById("msg-input");
 // const msgContainer = document.getElementById("chat-history");
 const ul = document.getElementById("ul");
 // const li = document.getElementById("li");
+let audio = new Audio("msg.wav");
 
 const append = (message, position) => {
   // const newUl = document.createElement("ul").classList.add("m-b-0");
   // const createNewLi = document.createElement("li").classList.add("clearfix");
+  const li = document.createElement("li");
+  li.classList.add("clearfix");
   const messageElement = document.createElement("div");
   messageElement.innerText = message;
   messageElement.classList.add("message");
   // messageElement.classList.add("my-message");
   messageElement.classList.add(position);
   // msgContainer.append(messageElement);
-  ul.append(messageElement);
+  ul.append(li);
+  li.append(messageElement);
+  // li.append(messageElement);
   // const newLi = createNewLi.append(messageElement);
   // ul.append(newLi);
+  if (position === "other-message") {
+    audio.play();
+  }
 };
 
 const name = prompt("Enter Your Name To Join The C-Chat");

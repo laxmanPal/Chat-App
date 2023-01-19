@@ -135,7 +135,7 @@ body {
 
 .chat .chat-history .message:after {
   bottom: 100%;
-  left: 7%;
+  /* left: 7%; */
   border: solid transparent;
   content: " ";
   height: 0;
@@ -149,11 +149,12 @@ body {
 
 .chat .chat-history .my-message {
   background: #efefef;
+  float: right;
 }
 
 .chat .chat-history .my-message:after {
   bottom: 100%;
-  left: 30px;
+  right: 30px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -166,18 +167,18 @@ body {
 }
 
 .chat .chat-history .other-message {
-  float: right;
+  float: left;
   background: #e8f1f3;
   text-align: right;
 }
 
 .chat .chat-history .other-message:after {
   border-bottom-color: #e8f1f3;
-  left: 65%;
+  left: 20px;
 }
 
 .chat .chat-message {
-  padding: 20px;
+  padding: 30px;
 }
 
 .online,
