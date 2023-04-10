@@ -2,6 +2,8 @@
 
 C-Chat Is a Real Time Chat Application built using Node.js, Express, Socket.io.
 
+![c-chat screenshot](https://user-images.githubusercontent.com/105804213/216825656-dce756ac-a1ca-4ee9-a037-99d61d5f8552.png)
+
 ## Features
 
 - Real-time communication between a client and a server using Socket.io.
